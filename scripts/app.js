@@ -1,6 +1,7 @@
 function data() {
+    const proxy = 'https://cors-anywhere.herokuapp.com/';
     const apiKey = "4c7d8f07559342cabe7d120f24568160";
-    const api = `http://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${apiKey}`;
+    const api = `${proxy}http://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${apiKey}`;
 
     const fetchTrending = () => {
         fetch(api)
